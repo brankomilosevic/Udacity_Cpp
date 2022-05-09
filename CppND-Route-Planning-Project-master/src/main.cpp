@@ -58,7 +58,7 @@ int main(int argc, const char **argv)
     // RoutePlanner object below in place of 10, 10, 90, 90.
     float start_x, start_y, end_x, end_y;
 
-    std::cout << "Enter coordinates of start end end point [between 0 and 100]: ";
+    std::cout << "Enter coordinates of start end end point [between 0 and 100]:\n";
     while (true)
     {
         std::cin >> start_x >> start_y >> end_x >> end_y;
@@ -73,7 +73,7 @@ int main(int argc, const char **argv)
             end_y   >= 0 && end_y   <= 100)
             break;
 
-        std::cout << "Try again...\n";
+        std::cout << "Try again from the start...\n";
     }
 
     // Build Model.
